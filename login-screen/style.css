@@ -75,8 +75,3 @@ button:hover {
     color: #236c5f;
     transition-duration: 0.5s;
 }
-
-#sign_in {
-    display: flex;
-    justify-content: center;
-}
