@@ -1,4 +1,16 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
+@font-face {
+    font-family: 'Incompleeta Regular';
+    src: url('fonts/IncompleetaRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --fonte-titulo: 'Incompleeta Regular', sans-serif;
+    --fonte-hora: 'Sofia Sans Semi Condensed', sans-serif;
+}
 
 body {
     background-color: lightcoral;
@@ -9,7 +21,6 @@ body {
 
 .glass_container {
     width: 500px;
-    height: 300px;
     color: white;
     padding: 30px;
     position: absolute;
@@ -19,9 +30,25 @@ body {
     gap: 20px;
     border-radius: 20px;
     backdrop-filter: blur(20px);
-    background-color: rgba(35,108,95, 0.154);
+    background-color: rgba(110, 110, 110, 0.286);
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
     border: 0px rgba(255,255,255,0.4) solid;
     border-bottom: 0px rgba(40,40,40,0.35) solid;
     border-right: 0px rgba(40,40,40,0.35) solid;
+}
+
+h1{
+    text-align: center;
+    font-family: var(--fonte-titulo) ;
+    font: normal 3em var(--fonte-titulo);
+}
+
+#time {
+    text-align: center;
+    font: normal 1.5em var(--fonte-hora);
+}
+
+#date {
+    text-align: center;
+    font: normal 1.5em var(--fonte-hora);
 }
