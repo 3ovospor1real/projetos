@@ -1,0 +1,82 @@
+body{
+    font: normal 16px Arial, Helvetica, sans-serif;
+    margin: 0px;
+    height: 100vh;
+    background: #236c5f url(image/background.jpg) no-repeat fixed center bottom;
+}
+
+.glass_container{
+    width: 500px;
+    height: 300px;
+    color: white;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(35,108,95, 0.154);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 0px rgba(255,255,255,0.4) solid;
+    border-bottom: 0px rgba(40,40,40,0.35) solid;
+    border-right: 0px rgba(40,40,40,0.35) solid;
+}
+
+h1{
+    margin: 0px 0px 30px;
+    text-align: center;
+}
+
+input{
+    font-size: 20px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    border: 0px;
+    padding: 10px;
+    border-radius: 20px;
+    text-indent: 5px;
+}
+
+input:focus-visible{
+    outline: 0px;
+}
+
+#forget_password{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: rgb(164, 164, 164);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#forget_password:hover{
+    color: #ffffff;
+}
+
+button {
+    background-color: #236c5f;
+    color: #ffffff;
+    font-size: 19px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    border: 0px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: #236c5f;
+    transition-duration: 0.5s;
+}
+
+#sign_in {
+    display: flex;
+    justify-content: center;
+}

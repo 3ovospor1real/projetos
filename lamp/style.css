@@ -1,0 +1,22 @@
+header, main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 50px;
+
+}
+
+#turnOn {
+  background-color: rgb(12, 227, 15);
+  border-radius: 5px;
+  border-color: rgb(12, 227, 15);
+}
+
+#turnOff {
+  background-color: rgb(242, 26, 26);
+  border-radius: 5px;
+  border-color: rgb(242, 26, 26);
+}
