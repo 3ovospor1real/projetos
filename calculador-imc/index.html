@@ -10,14 +10,14 @@
 <body>
     <section>
         <h1>Calcular IMC</h1>
-        <form>
+        <div id="form">
             <label for="altura">Altura (em metros)</label>
-            <input class="texto" type="number" name="altura" id="altura" placeholder="Insira seu nome"> <br>
+            <input class="texto" type="number" name="altura" id="altura" placeholder="Insira sua altura"> <br>
             <label for="peso"> Peso (em Kg)</label>
             <input class="texto" type="number" name="peso" id="peso" placeholder="Insira seu peso"> <br>
-            <input type="button" value="Calcular" id="calc">
-        </form>
-
+            <input type="button" value="Calcular" id="calc" onclick="calcular()">
+            <p id="res">Insira os dados <span id="imc_res"></span></p>
+        </div>    
         <div id="res_bar">
         </div>
     </section>
