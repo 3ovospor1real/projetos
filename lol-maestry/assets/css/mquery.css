@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #112026;
+    --cor2: #255959; 
+    --cor3: #03A696; 
+    --cor4: #B8D9D5; 
+    --cor5: #0AA65D;
+    --fonte-padrao: 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width: 500px) {
+    body{
+        background-image: linear-gradient(to bottom, var(--cor1) 60%, var(--cor2));
+    }
+    div.card{
+        max-width: 500px;
+    }
+    div.right{
+        justify-self: start;
+    }
+    div.left{
+        justify-self: end;
+    }
+}
+
