@@ -9,18 +9,22 @@
     --fonte-padrao: 'Open Sans', sans-serif;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
     body{
         background-image: linear-gradient(to bottom, var(--cor1) 60%, var(--cor2));
+    }
+    div.container{
+        flex-direction: column;
+        align-items: flex-start ;
+        margin: 0 5vw;
     }
     div.card{
         max-width: 500px;
     }
-    div.right{
-        justify-self: start;
-    }
     div.left{
-        justify-self: end;
+        align-self: flex-start;
+    }
+    div.right{
+        align-self: flex-end;
     }
 }
-
