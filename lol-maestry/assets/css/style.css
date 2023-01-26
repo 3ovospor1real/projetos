@@ -57,6 +57,67 @@ div.card{
     width: 90vw;
     background-color: var(--cor3);
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 10px;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.606);
+}
+
+div.card > div {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.606);
+}
+div.foto{
+    background: #000;
+    background-size: cover;
+    height: 175px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+div.info{
+    height: 175px;
+    width: 150px;
+    padding: 5px;
+    background-color: var(--cor4);
+    border-radius: 15px;
+}
+div.card img{
+    display: block;
+    margin: 5px auto;
+}
+
+div.card h1 {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 20px;
+}
+
+div.card p {
+    font-size: .8em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+div#amumu{
+    background-image: url(../image/Amumu.jpg);
+}
+
+div#tristana{
+    background-image: url(../image/Tristana.jpg);
+}
+
+div#kayn{
+    background-image: url(../image/Kayn.jpg);
+}
+
+div#senna{
+    background-image: url(../image/Senna.jpg);
+}
+
+div#jinx{
+    background-image: url(../image/Jinx.jpg);
 }
