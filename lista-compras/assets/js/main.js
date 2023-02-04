@@ -9,6 +9,7 @@ buttonNewTask.addEventListener('click', (e) => {
 
     addTask(inputTask.value)
     cleanInput();
+    saveTask();
     inputTask.focus();
 })
 
@@ -19,6 +20,7 @@ inputTask.addEventListener('keypress', (e) => {
 
         addTask(inputTask.value);
         cleanInput();
+        saveTask();
     }
 })
 
@@ -26,6 +28,7 @@ inputTask.addEventListener('keypress', (e) => {
 taskList.addEventListener('click', (e) => {
     if(e.target.classList.contains('remove-button')) {
         e.target.parentElement.remove();
+        saveTask()
     }
 })
 
@@ -54,7 +57,19 @@ function saveTask () {
     const listaDeTarefas = [];
 
     for(value of liTask) {
-        console.log(value);
+        let texto = value.innerText;
+        texto = texto.replace('remove','').trim();
+        listaDeTarefas.push(texto);
     }
+    console.log(listaDeTarefas)
+
+    const tarefaJson = JSON.stringify(listaDeTarefas)
+    localStorage.setItem('tarefas', tarefaJson)
+
 }
-saveTask()
+
+function loadTasks () {
+    let tarefas = localStorage.getItem('tarefas')
+    console.log(tarefas)
+}
+loadTasks()

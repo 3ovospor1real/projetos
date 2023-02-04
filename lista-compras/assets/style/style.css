@@ -100,4 +100,5 @@ i:hover{
 li p {
     text-indent: 50px;
     padding-top: 9px;
+    font-weight: bold;
 }
