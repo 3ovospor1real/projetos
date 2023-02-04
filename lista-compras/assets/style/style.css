@@ -1,0 +1,103 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --viva-magenta: #9e1636;
+    --fonte: 'Quicksand', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    background-color: var(--viva-magenta);
+    font-family: var(--fonte);
+    font-size: 18px;
+}
+
+.container{
+    position: absolute;
+    background-color: white;
+    width: 90vw;
+    height: 90vh;
+    max-width: 700px;
+    padding: 15px;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 5px #00000075;
+}
+
+.add-task{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-task input{
+    height: 35px;
+    width: 85%;
+    border-radius: 10px ;
+    border: none;
+    background-color: rgb(198, 198, 198);
+    text-indent: 10px;
+}
+
+.add-button{
+    background-color: rgba(174, 174, 174, 0.618);
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.add-button:hover{
+    cursor: pointer;
+}
+
+.tasks{
+    height: 80%;
+    margin: 15px 10px;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(174, 174, 174, 0.618);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.434);
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    background-color: white;
+    height: 40px;
+    margin: 5px;
+    position: relative;
+    border-radius: 10px;
+}
+
+i{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+li p {
+    text-indent: 50px;
+    padding-top: 9px;
+}
