@@ -1,43 +1,43 @@
 
-const inputTask = document.querySelector('input#new-task');
-const buttonNewTask = document.querySelector('.add-button');
-const taskList = document.querySelector('.task-list')
+const inputItem = document.querySelector('input#new-task');
+const buttonNewItem = document.querySelector('.add-button');
+const itemList = document.querySelector('.task-list')
 // EVENT LISTENERS
 // Botão ADD
-buttonNewTask.addEventListener('click', (e) => {
-    if(!inputTask.value) return
+buttonNewItem.addEventListener('click', (e) => {
+    if(!inputItem.value) return
 
-    addTask(inputTask.value)
+    addItem(inputItem.value)
     cleanInput();
-    saveTask();
-    inputTask.focus();
+    saveItem();
+    inputItem.focus();
 })
 
 // Tecla ENTER
-inputTask.addEventListener('keypress', (e) => {
+inputItem.addEventListener('keypress', (e) => {
     if(e.keyCode === 13) {
-        if(!inputTask.value) return
+        if(!inputItem.value) return
 
-        addTask(inputTask.value);
+        addItem(inputItem.value);
         cleanInput();
-        saveTask();
+        saveItem();
     }
 })
 
 // Botão remove
-taskList.addEventListener('click', (e) => {
+itemList.addEventListener('click', (e) => {
     if(e.target.classList.contains('remove-button')) {
         e.target.parentElement.remove();
-        saveTask()
+        saveItem()
     }
 })
 
 // FUNÇÕES 
-function addTask(taskName) {
+function addItem(itemName) {
     let li = document.createElement('li');
-    li.innerHTML = `<p>${taskName}</p>`
+    li.innerHTML = `<p>${itemName}</p>`
     createButton(li)
-    taskList.appendChild(li)
+    itemList.appendChild(li)
 }
 
 function createButton(element){
@@ -49,27 +49,30 @@ function createButton(element){
 }
 
 function cleanInput () {
-    inputTask.value = '';
+    inputItem.value = '';
 }
 
-function saveTask () {
-    const liTask = document.querySelectorAll('li');
-    const listaDeTarefas = [];
+function saveItem () {
+    const lis = document.querySelectorAll('li');
+    const listaDosItens = [];
 
-    for(value of liTask) {
+    for(value of lis) {
         let texto = value.innerText;
         texto = texto.replace('remove','').trim();
-        listaDeTarefas.push(texto);
+        listaDosItens.push(texto);
     }
-    console.log(listaDeTarefas)
+    console.log(listaDosItens)
 
-    const tarefaJson = JSON.stringify(listaDeTarefas)
+    const tarefaJson = JSON.stringify(listaDosItens)
     localStorage.setItem('tarefas', tarefaJson)
 
 }
 
-function loadTasks () {
-    let tarefas = localStorage.getItem('tarefas')
-    console.log(tarefas)
+function loadItens () {
+    let tarefas = localStorage.getItem('tarefas');
+    let listaTarefas = JSON.parse(tarefas);
+    for (const item of listaTarefas) {
+        addItem(item);
+    }
 }
-loadTasks()
+loadItens()
