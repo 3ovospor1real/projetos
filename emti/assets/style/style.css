@@ -23,6 +23,7 @@ header{
     justify-content: space-between;
     padding: 20px;
     color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.494);
 }
 
 div#icon-home{
@@ -31,14 +32,14 @@ div#icon-home{
 }
 
 div#page-title{
-    font-size: 18pt;
+    font-size: 16pt;
     font-weight: bold;
 }
 
 div.menu-bar{
     display: block;
-    width: 50px;
-    height: 5px;
+    width: 40px;
+    height: 4px;
     background-color: white;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -48,8 +49,8 @@ div.menu-bar{
 nav{
     color: white;
     background-color: #3d3d3d;
-    margin: 5px 0;
     display: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.494);
 }
 
 nav > ul{
@@ -67,4 +68,49 @@ nav > ul > li{
 
 nav > ul > li:hover{
     background-color: #3d3d3d;
+    cursor: pointer;
+}
+
+div.parallax{
+    height: 300px;
+    background: #000 url(../images/escola.jpeg) no-repeat left center;
+    background-size: cover;
+    box-shadow: 0px 4px 4px #00000065;
+}
+
+h1{
+    margin: 20px;
+    font-size: 24pt;
+    font-weight: 900;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.14);
+}
+
+div.sections{
+    background-color: var(--cor1);
+    color: white;
+    padding: 20px;
+    list-style-position: inside;
+}
+
+div.sections > ul > li {
+    margin: 10px 0px;
+}
+
+div.sections > ul > li > a {
+    color: white;
+    text-decoration: none;
+
+}
+
+footer{
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > p {
+    text-align: center;
 }
