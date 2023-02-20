@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif ;
+    background-image: url(image/bg.jpg);
+    background-size: cover;
+}
+
+main{
+    padding: 15px;
+    width: 80vw;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 15px;
+}
+
+main > h1, main > p {
+    text-align: center;
+}
+
+main > p {
+    font-size: 3em;
+    margin: 10px;
+}
+
+.butoes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.butoes button{
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 2px rgb(24, 24, 24);
+    padding: 5px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition-duration: .2s;
+}
+
+.butoes button:hover {
+    background-color: rgb(23, 23, 23);
+    color: white;
+}
