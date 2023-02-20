@@ -102,3 +102,14 @@ li p {
     padding-top: 9px;
     font-weight: bold;
 }
+
+p#footer{
+    text-align: center;
+    font-size: 15px;
+}
+
+p#footer > a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
