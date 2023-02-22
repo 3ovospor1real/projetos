@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áreas de estudo</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="shortcut icon" href="../assets/images/icons-logos/favicon-preto.png" type="image/x-icon">
+    <style>
+        div.banner{
+            background: #000 url(../assets/images/livros.jpg) no-repeat right center;
+            background-size: cover;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        div.banner > h1{
+            color: white;
+            margin: 0px;
+        }
+
+        div.banner > p {
+            text-align: right;
+            font-size: 1.2em;
+            color: white;
+            font-weight: bold;
+        }
+
+        section{
+            padding: 20px;
+        }
+
+        div.areas-conhecimento{
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        div.area{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 240px;
+            width: 180px;
+            margin: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.335);
+            border-radius: 20px;
+        }
+
+        div.foto-area{
+            background-color: red;
+            border-radius: 15px;
+            width: 130px;
+            height: 180px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div id="icon-home"><img src="../assets/images/icons-logos/favicon-branco.png" alt="" srcset=""></div>
+            <div id="page-title"><p>EMTI <br> 1 ano</p></div>
+            <div id="menu">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </div>
+        </div>
+        <nav class="menu-escondido">
+            <ul>
+                <li><a href="areas-estudo.html">Áreas de Estudo</a></li>
+                <li><a href="turmas.html">Turmas</a></li>
+                <li><a href="clubes.html">Clubes de Protagonismo</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <h1>Ensino Médio <br> Profissionalizante</h1>
+            <p>E.E. José Bonifácio</p>
+        </div>
+        <section>
+            <h1>Áreas do conhecimento</h1>
+            <div class="areas-conhecimento">
+                <div class="area">
+                    <div class="foto-area"></div> 
+                    <p>lorem</p>
+                </div>
+                <div class="area">
+                    <div class="foto-area"></div> 
+                    <p>lorem</p>
+                </div>
+                <div class="area">
+                    <div class="foto-area"></div> 
+                    <p>lorem</p>
+                </div>
+                <div class="area">
+                    <div class="foto-area"></div> 
+                    <p>lorem</p>
+                </div>
+                <div class="area">
+                    <div class="foto-area"></div> 
+                    <p>lorem</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../assets/js/menu.js"></script>
+</body>
+</html>

@@ -29,6 +29,12 @@ header{
 div#icon-home{
     height: 55px;
     width: 55px;
+    transition-duration: .3s;
+}
+
+div#icon-home:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 div#page-title{
@@ -71,15 +77,17 @@ nav > ul > li:hover{
     cursor: pointer;
 }
 
-div.parallax{
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+div.banner{
     height: 300px;
-    background: #000 url(../images/escola.jpeg) no-repeat left center;
-    background-size: cover;
     box-shadow: 0px 4px 4px #00000065;
 }
 
 h1{
-    margin: 20px;
     font-size: 24pt;
     font-weight: 900;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.14);
