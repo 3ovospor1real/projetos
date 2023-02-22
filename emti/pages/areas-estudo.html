@@ -44,12 +44,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 240px;
-            width: 180px;
+            justify-content: space-around;
+            height: 260px;
+            width: 190px;
             margin: 15px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.335);
             border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
         }
 
         div.foto-area{
@@ -57,6 +60,12 @@
             border-radius: 15px;
             width: 130px;
             height: 180px;
+            overflow: hidden;
+        }
+        
+        div.foto-area > img:hover{
+            transition-duration: .3s;
+            scale: 1.1;
         }
 
     </style>
@@ -64,14 +73,21 @@
 <body>
     <header>
         <div class="nav-bar">
-            <div id="icon-home"><img src="../assets/images/icons-logos/favicon-branco.png" alt="" srcset=""></div>
-            <div id="page-title"><p>EMTI <br> 1 ano</p></div>
+            <div id="icon-home">
+                <a href="../index.html"><img src="../assets/images/icons-logos/favicon-branco.png" alt="icon-pag"></a>
+            </div>
+
+            <div id="page-title">
+                <p>EMTI <br> 1 ano</p>
+            </div>
+
             <div id="menu">
                 <div class="menu-bar"></div>
                 <div class="menu-bar"></div>
                 <div class="menu-bar"></div>
             </div>
         </div>
+
         <nav class="menu-escondido">
             <ul>
                 <li><a href="areas-estudo.html">Áreas de Estudo</a></li>
@@ -80,6 +96,7 @@
                 <li><a href="projetos.html">Projetos</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
         <div class="banner">
@@ -90,24 +107,30 @@
             <h1>Áreas do conhecimento</h1>
             <div class="areas-conhecimento">
                 <div class="area">
-                    <div class="foto-area"></div> 
-                    <p>lorem</p>
+                    <div class="foto-area">
+                        <img src="../assets/images/areas/informatica.jpg" alt="informatica-foto" height="180">
+                    </div> 
+                    <p>Informática</p>
+                </div>
+                <div class="area">
+                    <div class="foto-area">
+                        <img src="../assets/images/areas/linguagens.jpg" alt="linguagens-foto" height="180">
+                    </div> 
+                    <p>Linguagens</p>
+                </div>
+                <div class="area">
+                    <div class="foto-area">
+                        <img src="../assets/images/areas/ciencias-naturais.jpg" alt="ciencias-naturais-fot" height="180">
+                    </div> 
+                    <p>Ciencias Naturais</p>
                 </div>
                 <div class="area">
                     <div class="foto-area"></div> 
-                    <p>lorem</p>
+                    <p>Ciências Humanas e Sociais</p>
                 </div>
                 <div class="area">
                     <div class="foto-area"></div> 
-                    <p>lorem</p>
-                </div>
-                <div class="area">
-                    <div class="foto-area"></div> 
-                    <p>lorem</p>
-                </div>
-                <div class="area">
-                    <div class="foto-area"></div> 
-                    <p>lorem</p>
+                    <p>Matemáticas</p>
                 </div>
             </div>
         </section>

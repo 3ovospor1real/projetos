@@ -13,13 +13,38 @@
             background: #000 url(assets/images/escola.jpeg) no-repeat left center;
             background-size: cover;
         }
+        
+        div.sections{
+            background-color: var(--cor1);
+            color: white;
+            padding: 20px;
+            list-style-position: inside;
+        }
+
+        div.sections > ul > li {
+            margin: 10px 0px;
+        }
+        
+        div.sections > ul > li > a {
+            color: white;
+            text-decoration: none;
+        }
+
+        div.sections > ul > li > a:hover{
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <div class="nav-bar">
-            <div id="icon-home"><img src="assets/images/icons-logos/favicon-branco.png" alt="" srcset=""></div>
-            <div id="page-title"><p>EMTI <br> 1 ano</p></div>
+            <div id="icon-home">
+                <a href="index.html"><img src="assets/images/icons-logos/favicon-branco.png" alt="" srcset=""></a>
+            </div>
+            <div id="page-title">
+                <p>EMTI <br> 1 ano</p>
+            </div>
             <div id="menu">
                 <div class="menu-bar"></div>
                 <div class="menu-bar"></div>
@@ -28,10 +53,10 @@
         </div>
         <nav class="menu-escondido">
             <ul>
-                <li>Áreas de Estudo</li>
-                <li>Turmas</li>
-                <li>Clubes de Protagonismo</li>
-                <li>Projetos</li>
+                <li><a href="areas-estudo.html">Áreas de Estudo</a></li>
+                <li><a href="turmas.html">Turmas</a></li>
+                <li><a href="clubes.html">Clubes de Protagonismo</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
             </ul>
         </nav>
     </header>

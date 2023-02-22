@@ -93,23 +93,6 @@ h1{
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.14);
 }
 
-div.sections{
-    background-color: var(--cor1);
-    color: white;
-    padding: 20px;
-    list-style-position: inside;
-}
-
-div.sections > ul > li {
-    margin: 10px 0px;
-}
-
-div.sections > ul > li > a {
-    color: white;
-    text-decoration: none;
-
-}
-
 footer{
     background-color: #2d2d2d;
     color: white;
